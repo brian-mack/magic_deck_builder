@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="simpleColorRefinementGroup">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="simpleRarityGroup">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="advancedColorRefinementGroup">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="advancedRarityGroup">
+    </Component>
+    <Container class="javax.swing.JPopupMenu" name="cardAddToList">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <MenuItem class="javax.swing.JMenuItem" name="addOne">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Add one"/>
+          </Properties>
+        </MenuItem>
+        <MenuItem class="javax.swing.JMenuItem" name="addTwo">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Add two"/>
+          </Properties>
+        </MenuItem>
+      </SubComponents>
+    </Container>
+    <Menu class="javax.swing.JMenuBar" name="Menu">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="fileMenuOption">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="File"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="fileNewOption">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+N"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="New"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="fileOpenOption">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+O"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Open"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="fileSaveOption">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+S"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Save"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="fileSaveAsOption">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+Ctrl+S"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Save As"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="filePrintDeckListOption">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+P"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Print Deck List"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="fileCloseOption">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Close"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fileCloseOptionActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="editMenuOption">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Edit"/>
+          </Properties>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Magic Deck Builder"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="0" green="0" red="0" type="rgb"/>
+    </Property>
+    <Property name="name" type="java.lang.String" value="deckBuilderFrame" noResource="true"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="Menu"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jTabbedPane2" alignment="1" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jTabbedPane2" min="-2" max="-2" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPane2">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="searchPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Search">
+                <Property name="tabTitle" type="java.lang.String" value="Search"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="organizedList" linkSize="4" min="-2" pref="222" max="-2" attributes="0"/>
+                          <Component id="entrySearchOrganizedList" linkSize="4" alignment="0" max="-2" attributes="0"/>
+                          <Component id="cardImage" alignment="0" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="SearchPane" max="32767" attributes="0"/>
+                          <Component id="searchListResultsPane" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="deckArea" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="cardImage" min="-2" pref="310" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="entrySearchOrganizedList" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="organizedList" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="SearchPane" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="searchListResultsPane" min="-2" pref="174" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="deckArea" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="organizedList">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="verticalScrollBarPolicy" type="int" value="22"/>
+              </Properties>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JList" name="fullCardList">
+                  <Properties>
+                    <Property name="selectionMode" type="int" value="1"/>
+                    <Property name="componentPopupMenu" type="javax.swing.JPopupMenu" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                      <ComponentRef name="cardAddToList"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="fullCardListValueChanged"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JList(namesList)"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JTabbedPane" name="SearchPane">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SearchPaneStateChanged"/>
+              </Events>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="simpleSearchPane">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Simple Search">
+                        <Property name="tabTitle" type="java.lang.String" value="Simple Search"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="simpleLabelColor" min="-2" pref="43" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="simpleColorRed" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="simpleColorBlue" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="simpleColorBlack" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="simpleColorGreen" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="simpleColorWhite" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="simpleLabelText" min="-2" max="-2" attributes="0"/>
+                                          <Component id="simpleLabelType" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="simpleLabelName" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="simpleEntryName" max="32767" attributes="0"/>
+                                          <Component id="simpleDropBoxTypeSelection" alignment="0" pref="329" max="32767" attributes="0"/>
+                                          <Component id="simpleEntryText" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="simpleLabelRarity" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="simpleRarityMythic" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="simpleRarityRare" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="simpleSearchButton" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="simpleRarityUncommon" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="simpleRarityCommon" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="simpleResetButton" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="simpleRBExclude" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="simpleRBSelected" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="simpleLabelColorRefinement" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="simpleLabelName" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="simpleEntryName" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="simpleLabelText" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="simpleEntryText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="simpleLabelType" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="simpleDropBoxTypeSelection" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="simpleLabelColor" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="simpleColorRed" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="simpleColorBlue" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="simpleColorBlack" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="simpleColorGreen" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="simpleColorWhite" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="simpleLabelColorRefinement" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="simpleRBExclude" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="simpleRBSelected" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="simpleLabelRarity" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="simpleRarityMythic" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="simpleRarityRare" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="simpleRarityUncommon" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="simpleRarityCommon" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="simpleSearchButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="simpleResetButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="214" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="simpleSearchButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Search"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="simpleSearchButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="simpleResetButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Reset"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="simpleResetButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="simpleRarityMythic">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="simpleRarityGroup"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Mythic"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="simpleRarityMythicActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="simpleRarityRare">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="simpleRarityGroup"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Rare"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="simpleRarityRareActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="simpleRarityUncommon">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="simpleRarityGroup"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Uncommon"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="simpleRarityUncommonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="simpleRarityCommon">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="simpleRarityGroup"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Common"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="simpleRarityCommonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="simpleLabelRarity">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Rarity:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="simpleLabelName">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Name:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="simpleLabelColor">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Color:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="simpleEntryName">
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="simpleColorRed">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Red"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="simpleColorBlue">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Blue"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="simpleColorBlack">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Black"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="simpleColorGreen">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Green"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="simpleColorWhite">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="White"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="simpleLabelType">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Type:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="simpleDropBoxTypeSelection">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="9">
+                            <StringItem index="0" value="&lt;none&gt;"/>
+                            <StringItem index="1" value="Artifact"/>
+                            <StringItem index="2" value="Instant"/>
+                            <StringItem index="3" value="Sorcery"/>
+                            <StringItem index="4" value="Creature"/>
+                            <StringItem index="5" value="Enchantment"/>
+                            <StringItem index="6" value="Land"/>
+                            <StringItem index="7" value="Planeswalker"/>
+                            <StringItem index="8" value="Tribal"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="simpleDropBoxTypeSelectionActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="simpleLabelText">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Text:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="simpleEntryText">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="simpleLabelColorRefinement">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Color Refinement:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="simpleRBExclude">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="simpleColorRefinementGroup"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Exclude Selected"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="simpleRBExcludeActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="simpleRBSelected">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="simpleColorRefinementGroup"/>
+                        </Property>
+                        <Property name="selected" type="boolean" value="true"/>
+                        <Property name="text" type="java.lang.String" value="Selected Colors Only"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="simpleRBSelectedActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="advancedSearchPane">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Advanced Search">
+                        <Property name="tabTitle" type="java.lang.String" value="Advanced Search"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
+                                      <Component id="advancedSearchButton" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="advancedResetButton" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="advancedLabelRarity" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="advancedRarityMythic" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="advancedRarityRare" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="advancedRarityUncommon" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="advancedRarityCommon" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="advancedLabelToughness" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="advancedLabelPower" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="advancedLabelCMC" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="2" attributes="0">
+                                                  <Component id="advancedEntryCMC" linkSize="2" alignment="2" min="-2" pref="44" max="-2" attributes="0"/>
+                                                  <Component id="advancedEntryPower" linkSize="2" alignment="2" min="-2" pref="44" max="-2" attributes="0"/>
+                                                  <Component id="advancedEntryToughness" linkSize="2" alignment="2" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="advancedLabelColorRefinement" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="advancedRBExclude" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="advancedRBSelected" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="advancedLabelAbilitySelect" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="advancedLabelName" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="advancedLabelText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="advancedLabelType" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="advancedLabelSubType" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="advancedLabelAbilitiesList" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="advancedLabelColorSelection" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="advancedAbilitiesScrollPane" alignment="1" pref="316" max="32767" attributes="0"/>
+                                          <Component id="advancedDropBoxAbilitySelection" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="advancedEntryText" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="advancedEntryName" alignment="0" max="32767" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="advancedColorRed" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="advancedColorBlue" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="advancedColorBlack" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="advancedColorGreen" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="advancedColorWhite" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Component id="advancedSubTypeSelection" alignment="0" min="-2" pref="250" max="-2" attributes="0"/>
+                                                  <Component id="advancedDropBoxType" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="advancedLabelName" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedEntryName" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="advancedLabelText" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedEntryText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="advancedLabelType" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedDropBoxType" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="advancedLabelSubType" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedSubTypeSelection" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="advancedLabelAbilitySelect" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedDropBoxAbilitySelection" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="advancedLabelAbilitiesList" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="advancedAbilitiesScrollPane" pref="0" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="advancedLabelColorSelection" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedColorRed" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedColorBlue" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedColorBlack" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedColorGreen" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedColorWhite" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="advancedLabelColorRefinement" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="advancedRBExclude" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedRBSelected" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="advancedLabelRarity" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedRarityMythic" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedRarityRare" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedRarityUncommon" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedRarityCommon" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="advancedLabelCMC" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedEntryCMC" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="advancedLabelPower" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedEntryPower" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="advancedLabelToughness" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedEntryToughness" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="32" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="advancedSearchButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="advancedResetButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JLabel" name="advancedLabelName">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Name:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="advancedEntryName">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="advancedLabelColorSelection">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Color:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="advancedColorRed">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Red"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="advancedColorBlue">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Blue"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="advancedColorBlack">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Black"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="advancedColorGreen">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Green"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="advancedColorWhite">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="White"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="advancedRarityCommon">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="advancedRarityGroup"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Common"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="advancedRarityCommonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="advancedRarityUncommon">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="advancedRarityGroup"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Uncommon"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="advancedRarityUncommonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="advancedRarityRare">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="advancedRarityGroup"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Rare"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="advancedRarityRareActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="advancedRarityMythic">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="advancedRarityGroup"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Mythic"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="advancedRarityMythicActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="advancedLabelRarity">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Rarity:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="advancedSearchButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Search"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="advancedSearchButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="advancedResetButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Reset"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="advancedResetButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="advancedLabelCMC">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Converted Mana Cost:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="advancedLabelPower">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Power:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="advancedLabelToughness">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Toughness:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="advancedLabelType">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Type:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="advancedDropBoxType">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="9">
+                            <StringItem index="0" value="&lt;none&gt;"/>
+                            <StringItem index="1" value="Artifact"/>
+                            <StringItem index="2" value="Instant"/>
+                            <StringItem index="3" value="Sorcery"/>
+                            <StringItem index="4" value="Creature"/>
+                            <StringItem index="5" value="Enchantment"/>
+                            <StringItem index="6" value="Land"/>
+                            <StringItem index="7" value="Planeswalker"/>
+                            <StringItem index="8" value="Tribal"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="advancedLabelAbilitySelect">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ability:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="advancedDropBoxAbilitySelection">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="151">
+                            <StringItem index="0" value="&lt;none&gt;"/>
+                            <StringItem index="1" value=" Absorb"/>
+                            <StringItem index="2" value=" Affinity"/>
+                            <StringItem index="3" value=" Amplify"/>
+                            <StringItem index="4" value=" Annihilator"/>
+                            <StringItem index="5" value=" Attach"/>
+                            <StringItem index="6" value=" Aura swap"/>
+                            <StringItem index="7" value=" Banding"/>
+                            <StringItem index="8" value=" Bands with other"/>
+                            <StringItem index="9" value=" Battalion"/>
+                            <StringItem index="10" value=" Battle cry"/>
+                            <StringItem index="11" value=" Bestow"/>
+                            <StringItem index="12" value=" Bloodrush"/>
+                            <StringItem index="13" value=" Bloodthirst"/>
+                            <StringItem index="14" value=" Bolster"/>
+                            <StringItem index="15" value=" Bury"/>
+                            <StringItem index="16" value=" Bushido"/>
+                            <StringItem index="17" value=" Buyback"/>
+                            <StringItem index="18" value=" Cascade"/>
+                            <StringItem index="19" value=" Champion"/>
+                            <StringItem index="20" value=" Changeling"/>
+                            <StringItem index="21" value=" Channel"/>
+                            <StringItem index="22" value=" Chroma"/>
+                            <StringItem index="23" value=" Cipher"/>
+                            <StringItem index="24" value=" Clash"/>
+                            <StringItem index="25" value=" Conspire"/>
+                            <StringItem index="26" value=" Convoke"/>
+                            <StringItem index="27" value=" Counter"/>
+                            <StringItem index="28" value=" Cumulative upkeep"/>
+                            <StringItem index="29" value=" Cycling"/>
+                            <StringItem index="30" value=" Dash"/>
+                            <StringItem index="31" value=" Deathtouch"/>
+                            <StringItem index="32" value=" Defender"/>
+                            <StringItem index="33" value=" Delve"/>
+                            <StringItem index="34" value=" Detain"/>
+                            <StringItem index="35" value=" Devour"/>
+                            <StringItem index="36" value=" Domain"/>
+                            <StringItem index="37" value=" Double strike"/>
+                            <StringItem index="38" value=" Dredge"/>
+                            <StringItem index="39" value=" Echo"/>
+                            <StringItem index="40" value=" Enchant"/>
+                            <StringItem index="41" value=" Entwine"/>
+                            <StringItem index="42" value=" Epic"/>
+                            <StringItem index="43" value=" Equip"/>
+                            <StringItem index="44" value=" Evoke"/>
+                            <StringItem index="45" value=" Evolve"/>
+                            <StringItem index="46" value=" Exalted"/>
+                            <StringItem index="47" value=" Exile"/>
+                            <StringItem index="48" value=" Exploit"/>
+                            <StringItem index="49" value=" Extort"/>
+                            <StringItem index="50" value=" Fading"/>
+                            <StringItem index="51" value=" Fateful hour"/>
+                            <StringItem index="52" value=" Fateseal"/>
+                            <StringItem index="53" value=" Fear"/>
+                            <StringItem index="54" value=" Ferocious"/>
+                            <StringItem index="55" value=" Fight"/>
+                            <StringItem index="56" value=" First strike"/>
+                            <StringItem index="57" value=" Flanking"/>
+                            <StringItem index="58" value=" Flash"/>
+                            <StringItem index="59" value=" Flashback"/>
+                            <StringItem index="60" value=" Flip"/>
+                            <StringItem index="61" value=" Flying"/>
+                            <StringItem index="62" value=" Forecast"/>
+                            <StringItem index="63" value=" Fortify"/>
+                            <StringItem index="64" value=" Frenzy"/>
+                            <StringItem index="65" value=" Graft"/>
+                            <StringItem index="66" value=" Grandeur"/>
+                            <StringItem index="67" value=" Gravestorm"/>
+                            <StringItem index="68" value=" Haste"/>
+                            <StringItem index="69" value=" Haunt"/>
+                            <StringItem index="70" value=" Hellbent"/>
+                            <StringItem index="71" value=" Heroic"/>
+                            <StringItem index="72" value=" Hexproof"/>
+                            <StringItem index="73" value=" Hideaway"/>
+                            <StringItem index="74" value=" Horsemanship"/>
+                            <StringItem index="75" value=" Imprint"/>
+                            <StringItem index="76" value=" Indestructible"/>
+                            <StringItem index="77" value=" Infect"/>
+                            <StringItem index="78" value=" Intimidate"/>
+                            <StringItem index="79" value=" Join forces"/>
+                            <StringItem index="80" value=" Kicker"/>
+                            <StringItem index="81" value=" Kinship"/>
+                            <StringItem index="82" value=" Landfall"/>
+                            <StringItem index="83" value=" Landwalk"/>
+                            <StringItem index="84" value=" Level up"/>
+                            <StringItem index="85" value=" Lifelink"/>
+                            <StringItem index="86" value=" Living weapon"/>
+                            <StringItem index="87" value=" Madness"/>
+                            <StringItem index="88" value=" Manifest"/>
+                            <StringItem index="89" value=" Menace"/>
+                            <StringItem index="90" value=" Metalcraft"/>
+                            <StringItem index="91" value=" Miracle"/>
+                            <StringItem index="92" value=" Modular"/>
+                            <StringItem index="93" value=" Monstrosity"/>
+                            <StringItem index="94" value=" Morbid"/>
+                            <StringItem index="95" value=" Morph"/>
+                            <StringItem index="96" value=" Multikicker"/>
+                            <StringItem index="97" value=" Ninjutsu"/>
+                            <StringItem index="98" value=" Offering"/>
+                            <StringItem index="99" value=" Overload"/>
+                            <StringItem index="100" value=" Persist"/>
+                            <StringItem index="101" value=" Phasing"/>
+                            <StringItem index="102" value=" Poisonous"/>
+                            <StringItem index="103" value=" Populate"/>
+                            <StringItem index="104" value=" Proliferate"/>
+                            <StringItem index="105" value=" Protection"/>
+                            <StringItem index="106" value=" Provoke"/>
+                            <StringItem index="107" value=" Prowess"/>
+                            <StringItem index="108" value=" Prowl"/>
+                            <StringItem index="109" value=" Radiance"/>
+                            <StringItem index="110" value=" Raid"/>
+                            <StringItem index="111" value=" Rampage"/>
+                            <StringItem index="112" value=" Reach"/>
+                            <StringItem index="113" value=" Rebound"/>
+                            <StringItem index="114" value=" Recover"/>
+                            <StringItem index="115" value=" Regenerate"/>
+                            <StringItem index="116" value=" Reinforce"/>
+                            <StringItem index="117" value=" Renown"/>
+                            <StringItem index="118" value=" Replicate"/>
+                            <StringItem index="119" value=" Retrace"/>
+                            <StringItem index="120" value=" Ripple"/>
+                            <StringItem index="121" value=" Sacrifice"/>
+                            <StringItem index="122" value=" Scavenge"/>
+                            <StringItem index="123" value=" Scry"/>
+                            <StringItem index="124" value=" Scry"/>
+                            <StringItem index="125" value=" Shadow"/>
+                            <StringItem index="126" value=" Shroud"/>
+                            <StringItem index="127" value=" Soulbond"/>
+                            <StringItem index="128" value=" Soulshift"/>
+                            <StringItem index="129" value=" Splice"/>
+                            <StringItem index="130" value=" Split second"/>
+                            <StringItem index="131" value=" Storm"/>
+                            <StringItem index="132" value=" Substance"/>
+                            <StringItem index="133" value=" Sunburst"/>
+                            <StringItem index="134" value=" Suspend"/>
+                            <StringItem index="135" value=" Sweep"/>
+                            <StringItem index="136" value=" Tap"/>
+                            <StringItem index="137" value=" Untap"/>
+                            <StringItem index="138" value=" Threshold"/>
+                            <StringItem index="139" value=" Totem armor"/>
+                            <StringItem index="140" value=" Trample"/>
+                            <StringItem index="141" value=" Transfigure"/>
+                            <StringItem index="142" value=" Transform"/>
+                            <StringItem index="143" value=" Transmute"/>
+                            <StringItem index="144" value=" Typecycling"/>
+                            <StringItem index="145" value=" Undying"/>
+                            <StringItem index="146" value=" Unearth"/>
+                            <StringItem index="147" value=" Unleash"/>
+                            <StringItem index="148" value=" Vanishing"/>
+                            <StringItem index="149" value=" Vigilance"/>
+                            <StringItem index="150" value=" Wither"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="advancedDropBoxAbilitySelectionItemStateChanged"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="advancedLabelSubType">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Sub-type:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="advancedSubTypeSelection">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="advancedEntryCMC">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="advancedEntryPower">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="advancedEntryToughness">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="advancedLabelText">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Text:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="advancedEntryText">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="advancedLabelAbilitiesList">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Abilities:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="advancedLabelColorRefinement">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Color Refinement:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="advancedRBExclude">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="advancedColorRefinementGroup"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Exclude Selected"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="advancedRBExcludeActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="advancedRBSelected">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="advancedColorRefinementGroup"/>
+                        </Property>
+                        <Property name="selected" type="boolean" value="true"/>
+                        <Property name="text" type="java.lang.String" value="Selected Colors Only"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="advancedRBSelectedActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Container class="javax.swing.JScrollPane" name="advancedAbilitiesScrollPane">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JList" name="advancedAbilitiesList">
+                          <Properties>
+                            <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                              <StringArray count="0"/>
+                            </Property>
+                            <Property name="selectionMode" type="int" value="1"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="advancedAbilitiesListKeyPressed"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JList(abilitiesList)"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JTextField" name="entrySearchOrganizedList">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Search by Name"/>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="entrySearchOrganizedListFocusGained"/>
+                <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="entrySearchOrganizedListKeyReleased"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="cardImage">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/my/MagicTheGathering/mtgbackImage.jpg"/>
+                </Property>
+                <Property name="toolTipText" type="java.lang.String" value="Currently selected card"/>
+                <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="&quot;ImageLabel&quot;" type="code"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="searchListResultsPane">
+              <Properties>
+                <Property name="horizontalScrollBarPolicy" type="int" value="32"/>
+                <Property name="verticalScrollBarPolicy" type="int" value="22"/>
+                <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[410, 174]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[410, 174]"/>
+                </Property>
+              </Properties>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JList" name="searchListResults">
+                  <Properties>
+                    <Property name="selectionMode" type="int" value="0"/>
+                    <Property name="componentPopupMenu" type="javax.swing.JPopupMenu" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                      <ComponentRef name="cardAddToList"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="searchListResultsValueChanged"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JList(resultList)"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="deckArea">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="deckScrollPane" alignment="0" min="-2" pref="547" max="-2" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="deckScrollPane" min="-2" pref="1308" max="-2" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="deckScrollPane">
+                  <Properties>
+                    <Property name="verticalScrollBarPolicy" type="int" value="22"/>
+                  </Properties>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextArea" name="deckList">
+                      <Properties>
+                        <Property name="columns" type="int" value="20"/>
+                        <Property name="rows" type="int" value="5"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="simulationPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Simulation">
+                <Property name="tabTitle" type="java.lang.String" value="Simulation"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
